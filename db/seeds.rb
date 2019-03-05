@@ -43,14 +43,22 @@ p9 = Player.create :name => "Jaylen Brown", :position => 'PF', :allstar => false
 p10 = Player.create :name => "Al Horford", :position => 'C', :allstar => false, :pts => 12.0, :rb => 6.8, :ast => 4.0, :stl => 0.9, :blk => 1.4, :fgperc => 52, :ftperc => 80, :threepm => 1.1, :threeperc => 35
 p11 = Player.create :name => "D'Angelo Russell", :position => 'PG', :allstar => true, :pts => 20.5, :rb => 3.7, :ast => 6.8, :stl => 1.1, :blk => 0.3, :fgperc => 44, :ftperc => 83, :threepm => 2.8, :threeperc => 37
 p12 = Player.create :name => "Joe Harris", :position => 'SG', :allstar => false, :pts => 13.8, :rb => 3.6, :ast => 2.5, :stl => 0.5, :blk => 0.2, :fgperc => 51, :ftperc => 85, :threepm => 2.4, :threeperc => 47
+p12 = Player.create :name => "Caris LeVert", :position => 'SF', :allstar => false, :pts => 14.8, :rb => 3.9, :ast => 3.9, :stl => 1.2, :blk => 0.4, :fgperc => 44, :ftperc => 74, :threepm => 1.2, :threeperc => 30
+p12 = Player.create :name => "Rudions Kurocs", :position => 'PF', :allstar => false, :pts => 8.6, :rb => 3.6, :ast => 0.8, :stl => 0.6, :blk => 0.3, :fgperc => 46, :ftperc => 88, :threepm => 0.8, :threeperc => 30
+p12 = Player.create :name => "Jarrett Allen", :position => 'C', :allstar => false, :pts => 11.1, :rb => 8.5, :ast => 1.5, :stl => 0.6, :blk => 1.6, :fgperc => 58, :ftperc => 71, :threepm => 0.1, :threeperc => 14
+p12 = Player.create :name => "Kemba Walker", :position => 'PG', :allstar => true, :pts => 25.1, :rb => 4.2, :ast => 5.8, :stl => 1.3, :blk => 0.8, :fgperc => 43, :ftperc => 83, :threepm => 3.3, :threeperc => 36
+p12 = Player.create :name => "Jeremy Lamb", :position => 'SG', :allstar => false, :pts => 15.3, :rb => 5.6, :ast => 2.1, :stl => 1.0, :blk => 0.3, :fgperc => 45, :ftperc => 87, :threepm => 1.4, :threeperc => 34
+p12 = Player.create :name => "Nicolas Batum", :position => 'SF', :allstar => false, :pts => 9.8, :rb => 5.2, :ast => 3.4, :stl => 1.0, :blk => 0.6, :fgperc => 46, :ftperc => 85, :threepm => 1.6, :threeperc => 40
+p12 = Player.create :name => "Marvin Williams", :position => 'PF', :allstar => false, :pts => 10.4, :rb => 5.7, :ast => 1.2, :stl => 0.9, :blk => 0.8, :fgperc => 43, :ftperc => 73, :threepm => 1.9, :threeperc => 37
+p12 = Player.create :name => "Cody Zeller", :position => 'C', :allstar => false, :pts => 10.2, :rb => 6.8, :ast => 2.1, :stl => 0.8, :blk => 0.8, :fgperc => 56, :ftperc => 79, :threepm => 0.1, :threeperc => 24
+p13 = Player.create :name => "", :position => '', :allstar => false, :pts => , :rb => , :ast => , :stl => , :blk => , :fgperc => , :ftperc => , :threepm => , :threeperc =>
+
+
 
 Draft.destroy_all
-d1 = Draft.create :name => 'Seeded draft', :started => false
+d1 = Draft.create :name => 'Seeded draft 1', :started => false
+d1 = Draft.create :name => 'Seeded draft 2', :started => false
+d1 = Draft.create :name => 'Seeded draft 3', :started => false
 
-# User.destroy_all
-# u1 = User.create :username => 'Chicken', :email => 'chicken@ga.co', :password => 'chicken'
-# u2 = User.create :username => 'Duck', :email => 'duck@ga.co', :password => 'chicken'
-# u3 = User.create :username => 'Turkey', :email => 'turkey@ga.co', :password => 'chicken'
-# u4 = User.create :username => 'Frog', :email => 'frog@ga.co', :password => 'chicken'
-# u5 = User.create :username => 'Dog', :email => 'dog@ga.co', :password => 'chicken'
-# u6 = User.create :username => 'Cat', :email => 'cat@ga.co', :password => 'chicken'
+Round.destroy_all
+r1 = Round.create :number => 1
