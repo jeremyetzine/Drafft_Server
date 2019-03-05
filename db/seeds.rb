@@ -51,7 +51,7 @@ p17 = Player.create :name => "Jeremy Lamb", :position => 'SG', :allstar => false
 p18 = Player.create :name => "Nicolas Batum", :position => 'SF', :allstar => false, :pts => 9.8, :rb => 5.2, :ast => 3.4, :stl => 1.0, :blk => 0.6, :fgperc => 46, :ftperc => 85, :threepm => 1.6, :threeperc => 40
 p19 = Player.create :name => "Marvin Williams", :position => 'PF', :allstar => false, :pts => 10.4, :rb => 5.7, :ast => 1.2, :stl => 0.9, :blk => 0.8, :fgperc => 43, :ftperc => 73, :threepm => 1.9, :threeperc => 37
 p20 = Player.create :name => "Cody Zeller", :position => 'C', :allstar => false, :pts => 10.2, :rb => 6.8, :ast => 2.1, :stl => 0.8, :blk => 0.8, :fgperc => 56, :ftperc => 79, :threepm => 0.1, :threeperc => 24
-p13 = Player.create :name => "", :position => '', :allstar => false, :pts => , :rb => , :ast => , :stl => , :blk => , :fgperc => , :ftperc => , :threepm => , :threeperc =>
+# p13 = Player.create :name => "", :position => '', :allstar => false, :pts => , :rb => , :ast => , :stl => , :blk => , :fgperc => , :ftperc => , :threepm => , :threeperc =>
 
 
 
@@ -61,4 +61,13 @@ d1 = Draft.create :name => 'Seeded draft 2', :started => false
 d1 = Draft.create :name => 'Seeded draft 3', :started => false
 
 Round.destroy_all
-r1 = Round.create :number => 1
+r1 = Round.create :number => 1, :draft_id => d1.id
+r2 = Round.create :number => 2, :draft_id => d1.id
+r3 = Round.create :number => 3, :draft_id => d1.id
+r4 = Round.create :number => 4, :draft_id => d1.id
+r5 = Round.create :number => 5, :draft_id => d1.id
+r6 = Round.create :number => 6, :draft_id => d1.id
+r7 = Round.create :number => 7, :draft_id => d1.id
+r8 = Round.create :number => 8, :draft_id => d1.id
+r9 = Round.create :number => 9, :draft_id => d1.id
+r10 = Round.create :number => 10, :draft_id => d1.id
