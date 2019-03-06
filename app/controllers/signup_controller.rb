@@ -1,4 +1,8 @@
 class SignupController < ApplicationController
+
+  # after_action :add_user_to_draft, only: [:create]
+
+
   def create
     user = User.new(user_params)
     if user.save

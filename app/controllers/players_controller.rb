@@ -1,7 +1,7 @@
 class PlayersController < ApplicationController
   before_action :authorize_access_request!
   def index
-    @players = Player.all
+    @players = Player.order(:pts => :desc)
     render :json => @players, :except => [:created_at, :updated_at]
   end
   def show

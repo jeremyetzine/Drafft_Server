@@ -6,6 +6,10 @@ class DraftsController < ApplicationController
   end
   def show
     @draft = Draft.find params[:id]
-    render :json => @draft, :only => [:id, :name, :started]
+    render :json => @draft, include: [:players, :users, :teams, :squads]
   end
+  # def players
+  #   draft = Draft.find params[:id]
+  #   render json: draft
+  # end
 end
