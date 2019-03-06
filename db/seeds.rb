@@ -3,13 +3,18 @@ d1 = Draft.create :name => 'Seeded draft 1', :started => false
 d2 = Draft.create :name => 'Seeded draft 2', :started => false
 d3 = Draft.create :name => 'Seeded draft 3', :started => false
 
+User.destroy_all
+u1 = User.create :username => 'chicken', :email => 'chicken@ga.co', :password => 'chicken'
+
+Squad.destroy_all
+s1 = Squad.create :name => 'ChickenSquad', :user_id => u1.id, :draft_id => d1.id
 
 Team.destroy_all
-t1 = Team.create :name => 'Atlanta Hawks', :abbr => 'atl', :draft_id => d1.id
-t2 = Team.create :name => 'Boston Celtics', :abbr => 'bos', :draft_id => d1.id
-t3 = Team.create :name => 'Brooklyn Nets', :abbr => 'bkln', :draft_id => d1.id
-t4 = Team.create :name => 'Charlotte Hornets', :abbr => 'char', :draft_id => d1.id
-t5 = Team.create :name => 'Chicago Bulls', :abbr => 'chi', :draft_id => d1.id
+t1 = Team.create :name => 'Atlanta Hawks', :abbr => 'atl', :draft_id => d1.id, :squad_id => s1.id
+t2 = Team.create :name => 'Boston Celtics', :abbr => 'bos', :draft_id => d1.id, :squad_id => s1.id
+t3 = Team.create :name => 'Brooklyn Nets', :abbr => 'bkln', :draft_id => d1.id, :squad_id => s1.id
+t4 = Team.create :name => 'Charlotte Hornets', :abbr => 'char', :draft_id => d1.id, :squad_id => s1.id
+t5 = Team.create :name => 'Chicago Bulls', :abbr => 'chi', :draft_id => d1.id, :squad_id => s1.id
 t6 = Team.create :name => 'Cleveland Cavaliers', :abbr => 'cle', :draft_id => d1.id
 t7 = Team.create :name => 'Dallas Mavericks', :abbr => 'dal', :draft_id => d1.id
 t8 = Team.create :name => 'Denver Nuggets', :abbr => 'den', :draft_id => d1.id
@@ -37,9 +42,9 @@ t29 = Team.create :name => 'Utah Jazz', :abbr => 'utah', :draft_id => d1.id
 t30 = Team.create :name => 'Washington Wizards', :abbr => 'was', :draft_id => d1.id
 
 Player.destroy_all
-p1 = Player.create :name => "Trae Young", :position => 'PG', :allstar => false, :pts => 18.3, :rb => 3.4, :ast => 7.8, :stl => 0.8, :blk => 0.2, :fgperc => 41, :ftperc => 82, :threepm => 2.0, :threeperc => 33, :draft_id => d1.id
-p2 = Player.create :name => "Kevin Huerter", :position => 'SG', :allstar => false, :pts => 9.3, :rb => 3.2, :ast => 2.7, :stl => 0.9, :blk => 0.3, :fgperc => 42, :ftperc => 75, :threepm => 1.8, :threeperc => 39, :draft_id => d1.id
-p3 = Player.create :name => "Kent Bazemore", :position => 'SF', :allstar => false, :pts => 12.8, :rb => 3.8, :ast => 2.4, :stl => 1.6, :blk => 0.8, :fgperc => 43, :ftperc => 72, :threepm => 1.4, :threeperc => 32, :draft_id => d1.id
+p1 = Player.create :name => "Trae Young", :position => 'PG', :allstar => false, :pts => 18.3, :rb => 3.4, :ast => 7.8, :stl => 0.8, :blk => 0.2, :fgperc => 41, :ftperc => 82, :threepm => 2.0, :threeperc => 33, :draft_id => d1.id, :squad_id => s1.id
+p2 = Player.create :name => "Kevin Huerter", :position => 'SG', :allstar => false, :pts => 9.3, :rb => 3.2, :ast => 2.7, :stl => 0.9, :blk => 0.3, :fgperc => 42, :ftperc => 75, :threepm => 1.8, :threeperc => 39, :draft_id => d1.id, :squad_id => s1.id
+p3 = Player.create :name => "Kent Bazemore", :position => 'SF', :allstar => false, :pts => 12.8, :rb => 3.8, :ast => 2.4, :stl => 1.6, :blk => 0.8, :fgperc => 43, :ftperc => 72, :threepm => 1.4, :threeperc => 32, :draft_id => d1.id, :squad_id => s1.id
 p4 = Player.create :name => "John", :position => 'Collins', :allstar => false, :pts => 19.5, :rb => 9.5, :ast => 2.0, :stl => 0.3, :blk => 0.4, :fgperc => 57, :ftperc => 77, :threepm => 1.0, :threeperc => 38, :draft_id => d1.id
 p5 = Player.create :name => "Dewayne", :position => 'Dedmon', :allstar => false, :pts => 10.7, :rb => 7.3, :ast => 1.4, :stl => 1.0, :blk => 1.2, :fgperc => 49, :ftperc => 84, :threepm => 1.3, :threeperc => 38, :draft_id => d1.id
 p6 = Player.create :name => "Kyrie Irving", :position => 'PG', :allstar => true, :pts => 23.4, :rb => 4.8, :ast => 6.9, :stl => 1.6, :blk => 0.5, :fgperc => 49, :ftperc => 87, :threepm => 2.5, :threeperc => 42, :draft_id => d1.id
