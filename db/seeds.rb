@@ -1,13 +1,13 @@
 Draft.destroy_all
-d1 = Draft.create :name => 'Seeded draft 1', :started => false
+d1 = Draft.create :name => 'drafft', :started => false
 d2 = Draft.create :name => 'Seeded draft 2', :started => false
 d3 = Draft.create :name => 'Seeded draft 3', :started => false
 
-User.destroy_all
-u1 = User.create :username => 'chicken', :email => 'chicken@ga.co', :password => 'chicken'
-
-Squad.destroy_all
-s1 = Squad.create :name => 'ChickenSquad', :user_id => u1.id, :draft_id => d1.id
+# User.destroy_all
+# u1 = User.create :username => 'chicken', :email => 'chicken@ga.co', :password => 'chicken'
+#
+# Squad.destroy_all
+# s1 = Squad.create :name => 'ChickenSquad', :user_id => u1.id, :draft_id => d1.id
 
 Team.destroy_all
 t1 = Team.create :name => 'Atlanta Hawks', :abbr => 'atl', :draft_id => d1.id
