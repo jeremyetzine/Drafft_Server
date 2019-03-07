@@ -60,9 +60,18 @@ p15 = Player.create :name => "Jarrett Allen", :position => 'C', :allstar => fals
 p16 = Player.create :name => "Kemba Walker", :position => 'PG', :allstar => true, :pts => 25.1, :rb => 4.2, :ast => 5.8, :stl => 1.3, :blk => 0.8, :fgperc => 43, :ftperc => 83, :threepm => 3.3, :threeperc => 36, :draft_id => d1.id
 p17 = Player.create :name => "Jeremy Lamb", :position => 'SG', :allstar => false, :pts => 15.3, :rb => 5.6, :ast => 2.1, :stl => 1.0, :blk => 0.3, :fgperc => 45, :ftperc => 87, :threepm => 1.4, :threeperc => 34, :draft_id => d1.id
 p18 = Player.create :name => "Nicolas Batum", :position => 'SF', :allstar => false, :pts => 9.8, :rb => 5.2, :ast => 3.4, :stl => 1.0, :blk => 0.6, :fgperc => 46, :ftperc => 85, :threepm => 1.6, :threeperc => 40, :draft_id => d1.id
-p19 = Player.create :name => "Marvin Williams", :position => 'PF', :allstar => false, :pts => 10.4, :rb => 5.7, :ast => 1.2, :stl => 0.9, :blk => 0.8, :fgperc => 43, :ftperc => 73, :threepm => 1.9, :threeperc => 37
-p20 = Player.create :name => "Cody Zeller", :position => 'C', :allstar => false, :pts => 10.2, :rb => 6.8, :ast => 2.1, :stl => 0.8, :blk => 0.8, :fgperc => 56, :ftperc => 79, :threepm => 0.1, :threeperc => 24
-# p13 = Player.create :name => "", :position => '', :allstar => false, :pts => , :rb => , :ast => , :stl => , :blk => , :fgperc => , :ftperc => , :threepm => , :threeperc =>
+p19 = Player.create :name => "Marvin Williams", :position => 'PF', :allstar => false, :pts => 10.4, :rb => 5.7, :ast => 1.2, :stl => 0.9, :blk => 0.8, :fgperc => 43, :ftperc => 73, :threepm => 1.9, :threeperc => 37, :draft_id => d1.id
+p20 = Player.create :name => "Cody Zeller", :position => 'C', :allstar => false, :pts => 10.2, :rb => 6.8, :ast => 2.1, :stl => 0.8, :blk => 0.8, :fgperc => 56, :ftperc => 79, :threepm => 0.1, :threeperc => 24, :draft_id => d1.id
+p21 = Player.create :name => "James Harden", :position => 'SG', :allstar => true, :pts => 36.7, :rb => 6.5, :ast => 7.5, :stl => 2.2, :blk => 0.8, :fgperc => 44, :ftperc => 88, :threepm => 4.9, :threeperc => 36, :draft_id => d1.id
+p22 = Player.create :name => "Paul George", :position => 'SF', :allstar => true, :pts => 28.6, :rb => 8.1, :ast => 4.2, :stl => 2.3, :blk => 0.4, :fgperc => 45, :ftperc => 84, :threepm => 3.9, :threeperc => 40, :draft_id => d1.id
+p23 = Player.create :name => "Stephen Curry", :position => 'PG', :allstar => true, :pts => 28.3, :rb => 5.2, :ast => 5.2, :stl => 1.3, :blk => 0.4, :fgperc => 48, :ftperc => 92, :threepm => 5.2, :threeperc => 44, :draft_id => d1.id
+p24 = Player.create :name => "Kevin Durant", :position => 'SF', :allstar => true, :pts => 27.5, :rb => 6.8, :ast => 5.7, :stl => 0.8, :blk => 1.2, :fgperc => 51, :ftperc => 81, :threepm => 1.9, :threeperc => 36, :draft_id => d1.id
+p25 = Player.create :name => "Joel Embiid", :position => 'C', :allstar => true, :pts => 27.3, :rb => 13.5, :ast => 3.5, :stl => 0.6, :blk => 1.9, :fgperc => 48, :ftperc => 81, :threepm => 1.2, :threeperc => 30, :draft_id => d1.id
+p26 = Player.create :name => "Giannis Antetokounmpo", :position => 'SF', :allstar => true, :pts => 27.0, :rb => 12.6, :ast => 6.0, :stl => 1.4, :blk => 1.5, :fgperc => 58, :ftperc => 70, :threepm => 0.6, :threeperc => 24, :draft_id => d1.id
+p27 = Player.create :name => "Lebron James", :position => 'SF', :allstar => true, :pts => 27.0, :rb => 8.7, :ast => 8.0, :stl => 1.4, :blk => 0.6, :fgperc => 51, :ftperc => 67, :threepm => 2.1, :threeperc => 35, :draft_id => d1.id
+p28 = Player.create :name => "Kawhi Leonard", :position => 'SF', :allstar => true, :pts => 27.0, :rb => 7.4, :ast => 3.3, :stl => 1.9, :blk => 0.4, :fgperc => 49, :ftperc => 87, :threepm => 1.7, :threeperc => 36, :draft_id => d1.id
+p29 = Player.create :name => "Blake Griffin", :position => 'PF', :allstar => true, :pts => 25.5, :rb => 7.9, :ast => 5.4, :stl => 0.7, :blk => 0.4, :fgperc => 47, :ftperc => 74, :threepm => 2.5, :threeperc => 37, :draft_id => d1.id
+p30 = Player.create :name => "Russel Westbrook", :position => 'PG', :allstar => true, :pts => 22.7, :rb => 11.2, :ast => 10.7, :stl => 2.1, :blk => 0.4, :fgperc => 42, :ftperc => 65, :threepm => 1.4, :threeperc => 27, :draft_id => d1.id
 
 
 Round.destroy_all
