@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   resources :rounds, :only => [:index, :show]
 
   get '/drafts/:id/players' => 'drafts#players'
+  put '/players/:id' => 'players#update'
 end

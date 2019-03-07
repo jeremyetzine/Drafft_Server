@@ -8,4 +8,14 @@ class PlayersController < ApplicationController
     @player = Player.find params[:id]
     render :json => @player, :except => [:created_at, :updated_at]
   end
+  def update
+    player = Player.first
+    player.update player_params
+  end
+
+  private
+
+  def player_params
+    params.permit(:squad_id)
+  end
 end
